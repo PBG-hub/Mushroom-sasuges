@@ -8,38 +8,39 @@
   <style>
     body {
       margin: 0;
+      padding: 0 16px;  /* safe spacing from left/right edges */
       font-family: Arial, sans-serif;
       background: #f6f7f5;
       color: #333;
-}
-  .about-text {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 0 16px;
-  text-align: center;
-  line-height: 1.6;
-} 
+    }
 
-  
- header {
-  background-image: url('Mush3.jpg');ii
-  background-size: cover;   /* fills screen */
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
-  padding: 80px 20px;
-  text-align: center;
+    .about-text {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+      line-height: 1.6;
+    }
 
-}
+    header {
+      background-image: url('Mush3.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      min-height: 400px;  /* controls header height */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
 
-header * {
-  position: relative;
-}
-}
+    header * {
+      position: relative;
     }
 
     section {
-      padding: 40px 20px;
+      padding: 40px 0;
       max-width: 1000px;
       margin: auto;
     }
@@ -105,9 +106,10 @@ header * {
 
 <section>
   <h2 class="about-title">About Us</h2>
-  We specialize in crafting fresh mushroom sausages made from natural, plant-based ingredients. Our products are carefully prepared to deliver great taste, quality, and a healthier alternative for everyday meals.
-</p>
-<section>
+  <p class="about-text">
+    We specialize in crafting fresh mushroom sausages made from natural, plant-based ingredients. Our products are carefully prepared to deliver great taste, quality, and a healthier alternative for everyday meals.
+  </p>
+</section>
 
 <section>
   <h2>Our Products</h2>
